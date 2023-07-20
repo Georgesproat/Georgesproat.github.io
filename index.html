@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://www.youtube.com/iframe_api"></script>
 	</head>
 	<body class="is-preload">
 
@@ -20,7 +21,7 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+							<span class="image avatar48"><img src="images/Bugs-Bunny.jpg" alt="" /></span>
 							<h1 id="title">George Sproat</h1>
 							<p>IOD Software Student</p>
 						</div>
@@ -60,13 +61,12 @@
 						<div class="container">
 
 							<header>
-								<h2 class="alt">Hi! I'm <strong>George</strong>,and this page has far to much going on for me to understand.<br /> </h2>
-								<p>So I'll start  by editing the plain text and then trying other things<br />
-								vitae natoque dictum sollicitudin elementum.</p>
+								<h2 class="alt">Hi! I'm <strong>George</strong>,and this page has far to much going on for me to understand. </h2>
+								<p>So I'll start  by editing the plain text and then trying other things</p>
 							</header>
 
 							<footer>
-								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
+								<a href="#portfolio" class="button scrolly">This is a button that scrolls</a>
 							</footer>
 
 						</div>
@@ -80,10 +80,22 @@
 								<h2>Portfolio</h2>
 							</header>
 
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-							egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-							Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-							fusce hendrerit lacus ridiculus.</p>
+							<p>Here you will find my portfolio of not much because its week one. but I will try to link a youtube video.</p>
+
+							<div id="player"></div>
+							<script>
+								
+								function onYouTubeIframeAPIReady() {
+									
+									var videoId = 'https://www.youtube.com/watch?v=iUuo3PhoXs0&ab_channel=ThemeSongGuy';
+						
+									new YT.Player('player', {
+										height: '360',
+										width: '640',
+										videoId: videoId
+									});
+								}
+							</script>
 
 							<div class="row">
 								<div class="col-4 col-12-mobile">
