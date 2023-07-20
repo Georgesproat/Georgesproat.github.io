@@ -1,0 +1,69 @@
+/* Styles for the dark mode toggle */
+.dark-mode-toggle {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: flex;
+	align-items: center;
+	color: #fff; /* Color for the icons */
+	z-index: 9999; /* Ensure the toggle stays on top of other elements */
+  }
+  
+  .switch {
+	position: relative;
+	display: inline-block;
+	width: 40px;
+	height: 20px;
+  }
+  
+  .switch input {
+	display: none;
+  }
+  
+  .slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	border-radius: 34px;
+	cursor: pointer;
+  }
+  
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 16px;
+	width: 16px;
+	left: 2px;
+	top: 2px; /* Adjust the top position to align the slider knob correctly */
+	background-color: #fff; /* Color for the slider knob */
+	border-radius: 50%;
+	transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+	background-color: #3a3a3a; /* Color for the dark mode background */
+  }
+  
+  input:checked + .slider:before {
+	transform: translateX(20px); /* Move the slider knob to the right for dark mode */
+  }
+  
+  /* Styles for the icons */
+  i.fa-sun,
+  i.fa-moon {
+	font-size: 18px;
+	margin: 0 5px;
+  }
+  
+  i.fa-sun {
+	color: #ffc107; /* Color for the sun icon (light mode) */
+  }
+  
+  i.fa-moon {
+	color: #f1c40f; /* Color for the moon icon (dark mode) */
+  }
+  
+  

@@ -8,13 +8,32 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assest/css/dark-toggle.css">
     <script src="https://www.youtube.com/iframe_api"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
   </head>
   <body class="is-preload">
+
     <!-- Header -->
-    <div id="header">
+
+    <div id="header"> 
       <div class="top">
-        <!-- Logo -->
+        <div class="dark-mode-toggle">
+          <input type="checkbox" id="darkModeToggle" onclick="toggleDarkMode()" />
+          <label for="darkModeToggle" class="switch">
+
+            <!-- Icon for light mode -->
+            <i class="fas fa-sun"></i>
+
+            <!-- Icon for dark mode -->
+            <i class="fas fa-moon"></i>
+          </label>
+        </div>
+
+         <!-- Logo -->
         <div id="logo">
           <span class="image avatar48"
             ><img src="images/Bugs-Bunny.jpg" alt=""
@@ -47,6 +66,7 @@
               >
             </li>
           </ul>
+        </div>
         </nav>
       </div>
 
@@ -131,8 +151,12 @@
           </script>
 
           <p>
-            Unfortunately that did not work,I dont know why but at least the
-            Iframe turned up and was where I wanted it to be.
+            <span style="text-decoration: line-through">
+              Unfortunately that did not work, I dont know why but at least the
+              Iframe turned up and was where I wanted it to be.
+            </span>
+            <br />
+            I fixed it yay
           </p>
           <p>
             Lets try changing the images to loony tunes characters, because why
@@ -206,13 +230,14 @@
           </header>
 
           <a href="#" class="image featured"
-            ><img src="images/pic08.jpg" alt=""
+            ><img src="images/giphy.gif" alt=""
           /></a>
+          <p>really hope this works too</p>
 
-          <p>
+          <h2>
             My name is George Sproat from Auckland New Zealand. I enjoy Sports,
-            Movies, Games, most things that play on screens really. 
-          </p>
+            Movies, Games, most things that play on screens really.
+          </h2>
 
           <div class="row">
             <div class="col-4 col-12-mobile">
@@ -281,7 +306,8 @@
           </header>
 
           <p>
-            This does not work and I definitely dont know how to make it work without some more lessons
+            This does not work and I definitely dont know how to make it work
+            without some more lessons
           </p>
 
           <form method="post" action="#">
@@ -321,5 +347,6 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/darkmode.js"></script>
   </body>
 </html>
